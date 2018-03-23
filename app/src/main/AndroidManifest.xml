@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.zhouyan.project">
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 内存读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--bugly配置权限start-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--bugly配置权限end-->
+
+
+    //个推
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 方向权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!--  &lt;!&ndash; 网络权限 &ndash;&gt;
+      <uses-permission android:name="android.permission.INTERNET" />
+      &lt;!&ndash; 存储卡权限 &ndash;&gt;
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <!-- 允许程序打开窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序更改主屏幕中的设置和快捷方式 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许读取手机状态 -->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //个推
+
+
+    //sharesdk
+    <!--   <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /><!--
+    &lt;!&ndash; 蓝牙分享所需的权限 &ndash;&gt;
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />-->
+    <!--//sharesdk-->
+    <!--// android:hardwareAccelerated="false" 禁用硬件加速-->
+    <!--  android:persistent="true"有一种永久性应用-->
+
+    <!--秒装 模拟器不存在此权限-->
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logowhite"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Xuan">
+
+        <activity
+            android:name=".login.LauncherActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        //登录
+        <activity
+            android:name=".login.view.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        //注册
+        <activity
+            android:name=".login.view.RegistActivtiy"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        //忘记面膜
+        <activity
+            android:name=".login.view.ResetPasswordActvitiy"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        //离线界面
+        <activity
+            android:name=".office.OfficeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        //开单
+        <activity
+            android:name=".order.SaleOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        //主界面
+        <activity
+            android:name=".home.view.HomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        //个推
+        <service
+            android:name=".service.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"></service>
+        <service android:name=".service.DemoIntentService" />
+        <service android:name=".service.DownloadService" />
+
+        //sharesdk
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--微信分享回调 -->
+        <activity
+            android:name="www.zhouyan.project.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        //Android 7.0
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="www.zhouyan.project.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

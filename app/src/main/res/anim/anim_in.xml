@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<translate-->
+        <!--android:fromXDelta="0"-->
+        <!--android:fromYDelta="0"-->
+        <!--android:toXDelta="0"-->
+        <!--android:toYDelta="85"-->
+        <!--android:duration="1"-->
+        <!--/>-->
+    <translate
+        android:fromXDelta="0"
+        android:fromYDelta="-300"
+        android:toXDelta="0"
+        android:toYDelta="@dimen/dimen_50"
+        android:duration="250"
+        android:fillAfter="true"
+        />
+    <!--fromYDelta:要设置成能使Toast完全置于屏幕上方的值, toYDelta:最终到达的顶部的位置, fromYDelta: 开始位置, interpolator: 加速器-->
+    <!--<alpha-->
+        <!--android:fromAlpha="0"-->
+        <!--android:toAlpha="1"-->
+        <!--android:duration="100"-->
+        <!--/>-->
+    <!--<translate-->
+        <!--android:fromXDelta="0"-->
+        <!--android:fromYDelta="0"-->
+        <!--android:toXDelta="0"-->
+        <!--android:toYDelta="20"-->
+        <!--android:duration="80"-->
+        <!--android:fillAfter="true"-->
+        <!--android:startOffset="350"-->
+        <!--/>-->
+</set>

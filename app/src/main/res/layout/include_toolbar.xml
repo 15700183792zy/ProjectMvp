@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commonTitle_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_44"
+    android:background="@color/base_blue">
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="设置"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        style="@style/base_textview_white"/>
+    <TextView
+        android:id="@+id/ll_back"
+        android:textColor="@color/base_white"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_gravity="left"
+        android:drawableLeft="@drawable/arr_ios_back_w"
+        android:gravity="center|left"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textSize="@dimen/size_14" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/tv_right_search"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="保存"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/size_14"
+        style="@style/base_textview_white"
+        />
+
+    <ImageView
+        android:id="@+id/tv_right_search"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_toEndOf="@+id/tv_right_btn"
+        android:scaleType="center"
+        android:src="@drawable/icon_sea"
+        android:textSize="@dimen/size_14"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/tv_right_btn"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_44"
+        android:textSize="@dimen/size_14"
+        android:scaleType="center"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_plus"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

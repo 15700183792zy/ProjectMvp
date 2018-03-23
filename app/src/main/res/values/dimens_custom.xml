@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <dimen name="titlebar_height">56dp</dimen><!-- 标题栏高 -->
+    <dimen name="button_height">48dp</dimen><!-- 按钮高 -->
+    <dimen name="up_spacing">36dp</dimen><!-- 上间距 -->
+    <dimen name="spacing">8dp</dimen><!-- 左右间距 -->
+    <dimen name="toolbar_padding_top">0dp</dimen>
+
+
+    <item name="dialog_width" type="dimen">80%</item>
+    <item name="line_width" type="dimen">70%</item>
+</resources>

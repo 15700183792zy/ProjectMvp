@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上一页出去的动画 -->
+<!-- android:fromXDelta="100%" -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:fromXDelta="0"
+    android:toXDelta="1"
+    android:fromYDelta="1"
+    android:toYDelta="1"
+    android:duration="500"
+    />

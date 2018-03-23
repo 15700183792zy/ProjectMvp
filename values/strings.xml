@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">恋商进销存</string>
+    <string name="load_more_bottom">已经加载到底了</string>
+    <string name="please_input">请输入</string>
+    <string name="login">登录</string>
+    <string name="password">密       码</string>
+    <string name="password2">找回密码</string>
+    <string name="phone">手机号码</string>
+    <string name="phone2">手机号</string>
+    <string name="icode">手机验证码</string>
+    <string name="regist">立即注册</string>
+    <string name="save">保存</string>
+    <string name="experience_account">体验账号</string>
+    <string name="regist2">注册新用户</string>
+    <string name="trade">行     业</string>
+    <string name="cname">公司名</string>
+    <string name="sname">店  名</string>
+    <string name="reset">重置</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="confirm">确定</string>
+    <string name="search">搜索</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+
+    <string name="customer_finance">欠款客户余额</string>
+    <string name="date_customer">15天滞销产品</string>
+    <string name="buy_back">30天未回购客户</string>
+    <string name="siyan">恋商进销存</string>
+    <string name="office">离线</string>
+    <string name="inventory">库存查询</string>
+    <string name="finance">进销存</string>
+    <string name="out_inventory">销售出库</string>
+    <string name="in_inventory">进货入库</string>
+    <string name="balance">余额</string>
+    <string name="cash">可提现</string>
+    <string name="rob_money">抢货币</string>
+    <string name="shop">店仓、人管理</string>
+    <string name="finances">财务管理</string>
+    <string name="logistics">物流管理</string>
+    <string name="morepeople">合作伙伴</string>
+    <string name="commody">商品管理</string>
+    <string name="new_style">新增供应商</string>
+    <string name="aog">开单入库</string>
+    <string name="join">库存查询</string>
+    <string name="to_cash">新建档案</string>
+    <string name="back"> </string>
+    <string name="print">打印设置</string>
+    <string name="clear">清理缓存</string>
+    <string name="versions">版本</string>
+    <string name="about">关于</string>
+    <string name="quit">退出登录</string>
+    <string name="details">详情</string>
+    <string name="out_invent">发货单</string>
+
+    <string name="editor">编辑</string>
+    <string name="comego">查看往来</string>
+    <string name="collection">收款</string>
+    <string name="call_phone">拨打电话</string>
+    <string name="save2">保存并退出</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="install_apk_path"></string>
+</resources>

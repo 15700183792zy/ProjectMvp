@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_270"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog_show">
+
+
+    <FrameLayout
+        android:id="@+id/fl_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_54"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/black"
+            android:text="单据尚未保存, 确定退出吗?"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_remark_dialog_cancer"
+            android:layout_width="@dimen/dimen_54"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5"
+            android:paddingBottom="@dimen/dimen_20"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_del"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+    <View
+        android:id="@+id/v_show"
+        android:layout_below="@id/fl_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="@color/bg_d6"
+        />
+    <LinearLayout
+        android:layout_below="@+id/v_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_below="@id/v_show"
+            android:id="@+id/btn_dialog_cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_44"
+            android:background="@null"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_requir"
+            android:text="取消"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="@dimen/dimen_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/bg_d6"/>
+        <Button
+            android:layout_below="@id/v_show"
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_44"
+            android:background="@null"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_requir"
+            android:text="确定"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>
